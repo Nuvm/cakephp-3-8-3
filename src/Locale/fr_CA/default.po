@@ -1,0 +1,538 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-10-04 16:03+0000\n"
+"PO-Revision-Date: 2019-10-04 13:08-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
+"Language: fr_CA\n"
+
+#: Controller/CollectorsController.php:54
+#: Controller/CollectorsController.php:79
+msgid "The collector has been saved."
+msgstr "Le collecteur a été sauvegardé."
+
+#: Controller/CollectorsController.php:58
+#: Controller/CollectorsController.php:83
+msgid "The collector could not be saved. Please, try again."
+msgstr "La sauvegarde du collecteur n'a pas réussie. Veuillez réessayer."
+
+#: Controller/CollectorsController.php:101
+msgid "The collector has been deleted."
+msgstr "Le collecteur a été effacé."
+
+#: Controller/CollectorsController.php:103
+msgid "The collector could not be deleted. Please, try again."
+msgstr "La suppression du collecteur n'a pas réussie. Veuillez réessayer."
+
+#: Controller/CollectorsLoansController.php:57
+#: Controller/CollectorsLoansController.php:83
+msgid "The collectors loan has been saved."
+msgstr "Le collecteur a été sauvegardé."
+
+#: Controller/CollectorsLoansController.php:61
+#: Controller/CollectorsLoansController.php:87
+msgid "The collectors loan could not be saved. Please, try again."
+msgstr "La sauvegarde du collecteur n'a pas réussie. Veuillez réessayer."
+
+#: Controller/CollectorsLoansController.php:106
+msgid "The collectors loan has been deleted."
+msgstr "Le collecteur a été effacé."
+
+#: Controller/CollectorsLoansController.php:108
+msgid "The collectors loan could not be deleted. Please, try again."
+msgstr "La suppression du collecteur n'a pas réussie. Veuillez réessayer."
+
+#: Controller/LoansController.php:57 Controller/LoansController.php:83
+msgid "The loan has been saved."
+msgstr "Le prêt a été sauvegardé."
+
+#: Controller/LoansController.php:61 Controller/LoansController.php:87
+msgid "The loan could not be saved. Please, try again."
+msgstr "La sauvegarde du prêt n'a pas réussie. Veuillez réessayer."
+
+#: Controller/LoansController.php:106
+msgid "The loan has been deleted."
+msgstr "Le prêt a été effacé."
+
+#: Controller/LoansController.php:108
+msgid "The loan could not be deleted. Please, try again."
+msgstr "La suppression du prêt n'a pas réussie. Veuillez réessayer."
+
+#: Controller/PaymentMethodsController.php:54
+#: Controller/PaymentMethodsController.php:78
+msgid "The payment method has been saved."
+msgstr "La méthode de paiement a été sauvegardé."
+
+#: Controller/PaymentMethodsController.php:58
+#: Controller/PaymentMethodsController.php:82
+msgid "The payment method could not be saved. Please, try again."
+msgstr ""
+"La sauvegarde de la méthode de paiement n'a pas réussie. Veuillez "
+"réessayer."
+
+#: Controller/PaymentMethodsController.php:99
+msgid "The payment method has been deleted."
+msgstr "La méthode de paiement a été effacé."
+
+#: Controller/PaymentMethodsController.php:101
+msgid "The payment method could not be deleted. Please, try again."
+msgstr ""
+"La suppression de la méthode de paiement n'a pas réussie. Veuillez "
+"réessayer."
+
+#: Controller/PaymentsController.php:57 Controller/PaymentsController.php:84
+msgid "The payment has been saved."
+msgstr "Le paiement a été sauvegardé."
+
+#: Controller/PaymentsController.php:61 Controller/PaymentsController.php:88
+msgid "The payment could not be saved. Please, try again."
+msgstr "La sauvegarde du paiement n'a pas réussie. Veuillez réessayer."
+
+#: Controller/PaymentsController.php:108
+msgid "The payment has been deleted."
+msgstr "Le paiement a été effacé."
+
+#: Controller/PaymentsController.php:110
+msgid "The payment could not be deleted. Please, try again."
+msgstr "La suppression du paiement n'a pas réussie. Veuillez réessayer."
+
+#: Controller/UsersController.php:75 Controller/UsersController.php:99
+msgid "The user has been saved."
+msgstr "L'utilisateur a été sauvegardé."
+
+#: Controller/UsersController.php:79 Controller/UsersController.php:103
+msgid "The user could not be saved. Please, try again."
+msgstr "La sauvegarde de l'utilisateur n'a pas réussie. Veuillez réessayer."
+
+#: Controller/UsersController.php:120
+msgid "The user has been deleted."
+msgstr "L'utilisateur a été effacé."
+
+#: Controller/UsersController.php:122
+msgid "The user could not be deleted. Please, try again."
+msgstr "La suppression de l'utilisateur n'a pas réussie. Veuillez réessayer."
+
+#: Template/Collectors/add.ctp:9 Template/Collectors/edit.ctp:9
+#: Template/Collectors/index.ctp:9 Template/Collectors/index.ctp:22
+#: Template/Collectors/view.ctp:9 Template/Collectors/view.ctp:42
+#: Template/CollectorsLoans/add.ctp:9 Template/CollectorsLoans/edit.ctp:9
+#: Template/CollectorsLoans/index.ctp:9 Template/CollectorsLoans/index.ctp:24
+#: Template/CollectorsLoans/view.ctp:9 Template/Loans/add.ctp:9
+#: Template/Loans/edit.ctp:9 Template/Loans/index.ctp:9
+#: Template/Loans/index.ctp:34 Template/Loans/view.ctp:9
+#: Template/Loans/view.ctp:63 Template/Loans/view.ctp:90
+#: Template/PaymentMethods/add.ctp:9 Template/PaymentMethods/edit.ctp:9
+#: Template/PaymentMethods/index.ctp:9 Template/PaymentMethods/index.ctp:23
+#: Template/PaymentMethods/view.ctp:9 Template/PaymentMethods/view.ctp:45
+#: Template/Payments/add.ctp:9 Template/Payments/edit.ctp:9
+#: Template/Payments/index.ctp:9 Template/Payments/index.ctp:32
+#: Template/Payments/view.ctp:9 Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9 Template/Users/index.ctp:25
+#: Template/Users/view.ctp:9 Template/Users/view.ctp:46
+#: Template/Users/view.ctp:74
+msgid "Actions"
+msgstr "Actions"
+
+#: Template/Collectors/add.ctp:10 Template/Collectors/edit.ctp:16
+#: Template/Collectors/view.ctp:12 Template/CollectorsLoans/add.ctp:13
+#: Template/CollectorsLoans/edit.ctp:19 Template/CollectorsLoans/index.ctp:13
+#: Template/CollectorsLoans/view.ctp:16 Template/Loans/add.ctp:17
+#: Template/Loans/edit.ctp:23 Template/Loans/index.ctp:17
+#: Template/Loans/view.ctp:20
+msgid "List Collectors"
+msgstr "Lister les collecteurs"
+
+#: Template/Collectors/add.ctp:11 Template/Collectors/edit.ctp:17
+#: Template/Collectors/index.ctp:11 Template/Collectors/view.ctp:14
+#: Template/CollectorsLoans/add.ctp:11 Template/CollectorsLoans/edit.ctp:17
+#: Template/CollectorsLoans/index.ctp:11 Template/CollectorsLoans/view.ctp:14
+#: Template/Loans/add.ctp:10 Template/Loans/edit.ctp:16
+#: Template/Loans/view.ctp:12 Template/Payments/add.ctp:17
+#: Template/Payments/edit.ctp:23 Template/Payments/index.ctp:17
+#: Template/Payments/view.ctp:20 Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:11 Template/Users/view.ctp:14
+msgid "List Loans"
+msgstr "Lister les prêts"
+
+#: Template/Collectors/add.ctp:12 Template/Collectors/edit.ctp:18
+#: Template/Collectors/index.ctp:12 Template/Collectors/view.ctp:15
+#: Template/CollectorsLoans/add.ctp:12 Template/CollectorsLoans/edit.ctp:18
+#: Template/CollectorsLoans/index.ctp:12 Template/CollectorsLoans/view.ctp:15
+#: Template/Loans/index.ctp:10 Template/Loans/view.ctp:13
+#: Template/Payments/add.ctp:18 Template/Payments/edit.ctp:24
+#: Template/Payments/index.ctp:18 Template/Payments/view.ctp:21
+#: Template/Users/edit.ctp:18 Template/Users/index.ctp:12
+#: Template/Users/view.ctp:15
+msgid "New Loan"
+msgstr "Nouveau prêt"
+
+#: Template/Collectors/add.ctp:18
+msgid "Add Collector"
+msgstr "Nouveau collecteur"
+
+#: Template/Collectors/add.ctp:24 Template/Collectors/edit.ctp:30
+#: Template/CollectorsLoans/add.ctp:24 Template/CollectorsLoans/edit.ctp:30
+#: Template/Loans/add.ctp:33 Template/Loans/edit.ctp:39
+#: Template/PaymentMethods/add.ctp:24 Template/PaymentMethods/edit.ctp:30
+#: Template/Payments/add.ctp:32 Template/Payments/edit.ctp:38
+#: Template/Users/add.ctp:19 Template/Users/edit.ctp:33
+msgid "Submit"
+msgstr "Envoyer"
+
+#: Template/Collectors/edit.ctp:11 Template/Collectors/index.ctp:33
+#: Template/Collectors/view.ctp:56 Template/CollectorsLoans/edit.ctp:11
+#: Template/CollectorsLoans/index.ctp:35 Template/Loans/edit.ctp:11
+#: Template/Loans/index.ctp:50 Template/Loans/view.ctp:72
+#: Template/Loans/view.ctp:103 Template/PaymentMethods/edit.ctp:11
+#: Template/PaymentMethods/index.ctp:35 Template/PaymentMethods/view.ctp:58
+#: Template/Payments/edit.ctp:11 Template/Payments/index.ctp:47
+#: Template/Users/edit.ctp:11 Template/Users/index.ctp:37
+#: Template/Users/view.ctp:58 Template/Users/view.ctp:85
+msgid "Delete"
+msgstr "Supprimer"
+
+#: Template/Collectors/edit.ctp:13 Template/Collectors/index.ctp:33
+#: Template/Collectors/view.ctp:11 Template/Collectors/view.ctp:56
+#: Template/CollectorsLoans/edit.ctp:13 Template/CollectorsLoans/index.ctp:35
+#: Template/CollectorsLoans/view.ctp:11 Template/Loans/edit.ctp:13
+#: Template/Loans/index.ctp:50 Template/Loans/view.ctp:11
+#: Template/Loans/view.ctp:72 Template/Loans/view.ctp:103
+#: Template/PaymentMethods/edit.ctp:13 Template/PaymentMethods/index.ctp:35
+#: Template/PaymentMethods/view.ctp:11 Template/PaymentMethods/view.ctp:58
+#: Template/Payments/edit.ctp:13 Template/Payments/index.ctp:47
+#: Template/Payments/view.ctp:11 Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:37 Template/Users/view.ctp:11
+#: Template/Users/view.ctp:58 Template/Users/view.ctp:85
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Êtes-vous sûr de supprimer # {0}?"
+
+#: Template/Collectors/edit.ctp:24 Template/Collectors/view.ctp:10
+msgid "Edit Collector"
+msgstr "Modifier collecteur"
+
+#: Template/Collectors/index.ctp:10 Template/Collectors/view.ctp:13
+#: Template/CollectorsLoans/add.ctp:14 Template/CollectorsLoans/edit.ctp:20
+#: Template/CollectorsLoans/index.ctp:14 Template/CollectorsLoans/view.ctp:17
+#: Template/Loans/add.ctp:18 Template/Loans/edit.ctp:24
+#: Template/Loans/index.ctp:18 Template/Loans/view.ctp:21
+msgid "New Collector"
+msgstr "Nouveau collecteur"
+
+#: Template/Collectors/index.ctp:16
+msgid "Collectors"
+msgstr "Collecteurs"
+
+#: Template/Collectors/index.ctp:31 Template/Collectors/view.ctp:54
+#: Template/CollectorsLoans/index.ctp:33 Template/Loans/index.ctp:48
+#: Template/Loans/view.ctp:70 Template/Loans/view.ctp:101
+#: Template/PaymentMethods/index.ctp:33 Template/PaymentMethods/view.ctp:56
+#: Template/Payments/index.ctp:45 Template/Users/index.ctp:35
+#: Template/Users/view.ctp:56 Template/Users/view.ctp:83
+msgid "View"
+msgstr "Afficher"
+
+#: Template/Collectors/index.ctp:32 Template/Collectors/view.ctp:55
+#: Template/CollectorsLoans/index.ctp:34 Template/Loans/index.ctp:49
+#: Template/Loans/view.ctp:71 Template/Loans/view.ctp:102
+#: Template/PaymentMethods/index.ctp:34 Template/PaymentMethods/view.ctp:57
+#: Template/Payments/index.ctp:46 Template/Users/index.ctp:36
+#: Template/Users/view.ctp:57 Template/Users/view.ctp:84
+msgid "Edit"
+msgstr "Modifier"
+
+#: Template/Collectors/index.ctp:41 Template/CollectorsLoans/index.ctp:43
+#: Template/Loans/index.ctp:58 Template/PaymentMethods/index.ctp:43
+#: Template/Payments/index.ctp:55 Template/Users/index.ctp:45
+msgid "first"
+msgstr "premier"
+
+#: Template/Collectors/index.ctp:42 Template/CollectorsLoans/index.ctp:44
+#: Template/Loans/index.ctp:59 Template/PaymentMethods/index.ctp:44
+#: Template/Payments/index.ctp:56 Template/Users/index.ctp:46
+msgid "previous"
+msgstr "précédent"
+
+#: Template/Collectors/index.ctp:44 Template/CollectorsLoans/index.ctp:46
+#: Template/Loans/index.ctp:61 Template/PaymentMethods/index.ctp:46
+#: Template/Payments/index.ctp:58 Template/Users/index.ctp:48
+msgid "next"
+msgstr "prochain"
+
+#: Template/Collectors/index.ctp:45 Template/CollectorsLoans/index.ctp:47
+#: Template/Loans/index.ctp:62 Template/PaymentMethods/index.ctp:47
+#: Template/Payments/index.ctp:59 Template/Users/index.ctp:49
+msgid "last"
+msgstr "dernier"
+
+#: Template/Collectors/index.ctp:47 Template/CollectorsLoans/index.ctp:49
+#: Template/Loans/index.ctp:64 Template/PaymentMethods/index.ctp:49
+#: Template/Payments/index.ctp:61 Template/Users/index.ctp:51
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+"Page {{page}} de {{pages}}, affichant {{current}} résultat(s) sur "
+"{{count}} résultat(s)"
+
+#: Template/Collectors/view.ctp:11
+msgid "Delete Collector"
+msgstr "Supprimer collecteur"
+
+#: Template/Collectors/view.ctp:22 Template/Loans/view.ctp:62
+#: Template/PaymentMethods/view.ctp:22
+msgid "Name"
+msgstr "Nom"
+
+#: Template/Collectors/view.ctp:26 Template/Collectors/view.ctp:35
+#: Template/Loans/view.ctp:32 Template/Loans/view.ctp:61
+#: Template/Loans/view.ctp:84 Template/PaymentMethods/view.ctp:30
+#: Template/PaymentMethods/view.ctp:39 Template/Payments/view.ctp:44
+msgid "Id"
+msgstr "Id"
+
+#: Template/Collectors/view.ctp:31 Template/Users/view.ctp:37
+msgid "Related Loans"
+msgstr "Prêts associés"
+
+#: Template/Collectors/view.ctp:36 Template/Loans/view.ctp:36
+#: Template/Users/view.ctp:41
+msgid "Interest"
+msgstr "Intérêt"
+
+#: Template/Collectors/view.ctp:37 Template/Loans/view.ctp:40
+#: Template/Users/view.ctp:42
+msgid "Amount"
+msgstr "Montant"
+
+#: Template/Collectors/view.ctp:38 Template/Loans/view.ctp:44
+#: Template/Users/view.ctp:43
+msgid "Amount Due"
+msgstr "Montant dû"
+
+#: Template/Collectors/view.ctp:39 Template/Loans/view.ctp:87
+#: Template/PaymentMethods/view.ctp:42
+msgid "User Id"
+msgstr "Id d'utilisateur"
+
+#: Template/Collectors/view.ctp:40 Template/Loans/view.ctp:48
+#: Template/Loans/view.ctp:86 Template/PaymentMethods/view.ctp:41
+#: Template/Payments/view.ctp:48 Template/Users/view.ctp:32
+#: Template/Users/view.ctp:44 Template/Users/view.ctp:71
+msgid "Created"
+msgstr "Créé"
+
+#: Template/Collectors/view.ctp:41 Template/Loans/view.ctp:52
+#: Template/Users/view.ctp:45
+msgid "Modified"
+msgstr "Modifié"
+
+#: Template/CollectorsLoans/add.ctp:10 Template/CollectorsLoans/edit.ctp:16
+#: Template/CollectorsLoans/view.ctp:12
+msgid "List Collectors Loans"
+msgstr "??"
+
+#: Template/CollectorsLoans/add.ctp:20
+msgid "Add Collectors Loan"
+msgstr "??"
+
+#: Template/CollectorsLoans/edit.ctp:26 Template/CollectorsLoans/view.ctp:10
+msgid "Edit Collectors Loan"
+msgstr "??"
+
+#: Template/CollectorsLoans/index.ctp:10 Template/CollectorsLoans/view.ctp:13
+msgid "New Collectors Loan"
+msgstr "??"
+
+#: Template/CollectorsLoans/index.ctp:18
+msgid "Collectors Loans"
+msgstr "??"
+
+#: Template/CollectorsLoans/view.ctp:11
+msgid "Delete Collectors Loan"
+msgstr "??"
+
+#: Template/CollectorsLoans/view.ctp:24 Template/Payments/view.ctp:40
+msgid "Loan"
+msgstr "Prêt"
+
+#: Template/CollectorsLoans/view.ctp:28
+msgid "Collector"
+msgstr "Collecteur"
+
+#: Template/Layout/error.ctp:36
+msgid "Error"
+msgstr "Erreur"
+
+#: Template/Layout/error.ctp:44
+msgid "Back"
+msgstr "Retour"
+
+#: Template/Loans/add.ctp:12 Template/Loans/edit.ctp:18
+#: Template/Loans/index.ctp:12 Template/Loans/view.ctp:15
+#: Template/Payments/add.ctp:12 Template/Payments/edit.ctp:18
+#: Template/Payments/index.ctp:12 Template/Payments/view.ctp:15
+#: Template/Users/edit.ctp:16 Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "Lister les utilisateurs"
+
+#: Template/Loans/add.ctp:13 Template/Loans/edit.ctp:19
+#: Template/Loans/index.ctp:13 Template/Loans/view.ctp:16
+#: Template/Payments/add.ctp:13 Template/Payments/edit.ctp:19
+#: Template/Payments/index.ctp:13 Template/Payments/view.ctp:16
+#: Template/Users/index.ctp:10 Template/Users/view.ctp:13
+msgid "New User"
+msgstr "Nouveau utilisateur"
+
+#: Template/Loans/add.ctp:15 Template/Loans/edit.ctp:21
+#: Template/Loans/index.ctp:15 Template/Loans/view.ctp:18
+#: Template/PaymentMethods/add.ctp:11 Template/PaymentMethods/edit.ctp:17
+#: Template/PaymentMethods/index.ctp:11 Template/PaymentMethods/view.ctp:14
+#: Template/Payments/add.ctp:10 Template/Payments/edit.ctp:16
+#: Template/Payments/view.ctp:12 Template/Users/edit.ctp:19
+#: Template/Users/index.ctp:13 Template/Users/view.ctp:16
+msgid "List Payments"
+msgstr "Lister les paiements"
+
+#: Template/Loans/add.ctp:16 Template/Loans/edit.ctp:22
+#: Template/Loans/index.ctp:16 Template/Loans/view.ctp:19
+#: Template/PaymentMethods/add.ctp:12 Template/PaymentMethods/edit.ctp:18
+#: Template/PaymentMethods/index.ctp:12 Template/PaymentMethods/view.ctp:15
+#: Template/Payments/index.ctp:10 Template/Payments/view.ctp:13
+#: Template/Users/edit.ctp:20 Template/Users/index.ctp:14
+#: Template/Users/view.ctp:17
+msgid "New Payment"
+msgstr "Nouveau paiement"
+
+#: Template/Loans/add.ctp:24
+msgid "Add Loan"
+msgstr "Ajouter un prêt"
+
+#: Template/Loans/edit.ctp:30 Template/Loans/view.ctp:10
+msgid "Edit Loan"
+msgstr "Modifier le prêt"
+
+#: Template/Loans/index.ctp:22
+msgid "Loans"
+msgstr "Prêts"
+
+#: Template/Loans/view.ctp:11
+msgid "Delete Loan"
+msgstr "Supprimer le prêt"
+
+#: Template/Loans/view.ctp:28
+msgid "User"
+msgstr "Utilisateur"
+
+#: Template/Loans/view.ctp:57
+msgid "Related Collectors"
+msgstr "Collecteurs associés"
+
+#: Template/Loans/view.ctp:80 Template/PaymentMethods/view.ctp:35
+#: Template/Users/view.ctp:66
+msgid "Related Payments"
+msgstr "Paiements associés"
+
+#: Template/Loans/view.ctp:85 Template/PaymentMethods/view.ctp:40
+#: Template/Payments/view.ctp:28 Template/Users/view.ctp:70
+msgid "Notes"
+msgstr "Notes"
+
+#: Template/Loans/view.ctp:88 Template/PaymentMethods/view.ctp:43
+#: Template/Users/view.ctp:72
+msgid "Payment Method Id"
+msgstr "Id de la méthode de paiement"
+
+#: Template/Loans/view.ctp:89 Template/PaymentMethods/view.ctp:44
+#: Template/Users/view.ctp:73
+msgid "Loan Id"
+msgstr "Id du prêt"
+
+#: Template/PaymentMethods/add.ctp:10 Template/PaymentMethods/edit.ctp:16
+#: Template/PaymentMethods/view.ctp:12 Template/Payments/add.ctp:15
+#: Template/Payments/edit.ctp:21 Template/Payments/index.ctp:15
+#: Template/Payments/view.ctp:18
+msgid "List Payment Methods"
+msgstr "Lister les méthodes de paiement"
+
+#: Template/PaymentMethods/add.ctp:18
+msgid "Add Payment Method"
+msgstr "Ajouter une méthode de paiement"
+
+#: Template/PaymentMethods/edit.ctp:24 Template/PaymentMethods/view.ctp:10
+msgid "Edit Payment Method"
+msgstr "Modifier la méthode de paiement"
+
+#: Template/PaymentMethods/index.ctp:10 Template/PaymentMethods/view.ctp:13
+#: Template/Payments/add.ctp:16 Template/Payments/edit.ctp:22
+#: Template/Payments/index.ctp:16 Template/Payments/view.ctp:19
+msgid "New Payment Method"
+msgstr "Nouvelle méthode de paiement"
+
+#: Template/PaymentMethods/index.ctp:16
+msgid "Payment Methods"
+msgstr "Méthodes de paiement"
+
+#: Template/PaymentMethods/view.ctp:11
+msgid "Delete Payment Method"
+msgstr "Supprimer la méthode de paiement"
+
+#: Template/PaymentMethods/view.ctp:26
+msgid "Description"
+msgstr "Description"
+
+#: Template/Payments/add.ctp:24
+msgid "Add Payment"
+msgstr "Ajouter un paiement"
+
+#: Template/Payments/edit.ctp:30 Template/Payments/view.ctp:10
+msgid "Edit Payment"
+msgstr "Modifier un paiement"
+
+#: Template/Payments/index.ctp:22
+msgid "Payments"
+msgstr "Paiements"
+
+#: Template/Payments/view.ctp:11
+msgid "Delete Payment"
+msgstr "Supprimer le paiement"
+
+#: Template/Payments/view.ctp:32 Template/Users/view.ctp:24
+msgid "Email"
+msgstr "Adresse courriel"
+
+#: Template/Payments/view.ctp:36
+msgid "Payment Method"
+msgstr "Méthode de paiement"
+
+#: Template/Users/add.ctp:10
+msgid "Add User"
+msgstr "Ajouter un utilisateur"
+
+#: Template/Users/edit.ctp:26 Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "Modifier un utilisateur"
+
+#: Template/Users/index.ctp:18
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: Template/Users/login.ctp:7
+msgid "Create an account"
+msgstr "Créer un compte"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "Supprimer l'utilisateur"
+
+#: Template/Users/view.ctp:28
+msgid "Permission Level"
+msgstr "Niveau de permission"

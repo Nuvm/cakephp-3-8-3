@@ -1,0 +1,7 @@
+2019-10-04 15:47:26 Error: [RuntimeException] Unknown command `cake 18n`. Run `cake --help` to get the list of valid commands. in C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 347
+Stack Trace:
+#0 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), '18n')
+#1 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
