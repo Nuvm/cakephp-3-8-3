@@ -30,7 +30,6 @@ use Psr\Http\Message\MessageInterface;
  */
 class CorsBuilder
 {
-
     /**
      * The response object this builder is attached to.
      *
@@ -175,7 +174,7 @@ class CorsBuilder
     /**
      * Whitelist headers that can be sent in CORS requests.
      *
-     * @param array $headers The list of headers to accept in CORS requests.
+     * @param string[] $headers The list of headers to accept in CORS requests.
      * @return $this
      */
     public function allowHeaders(array $headers)
@@ -188,7 +187,7 @@ class CorsBuilder
     /**
      * Define the headers a client library/browser can expose to scripting
      *
-     * @param array $headers The list of headers to expose CORS responses
+     * @param string[] $headers The list of headers to expose CORS responses
      * @return $this
      */
     public function exposeHeaders(array $headers)

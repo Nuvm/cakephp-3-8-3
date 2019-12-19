@@ -74,7 +74,6 @@ use RuntimeException;
  */
 class View implements EventDispatcherInterface
 {
-
     use CellTrait {
         cell as public;
     }
@@ -1326,7 +1325,9 @@ class View implements EventDispatcherInterface
                 'Use the helper registry through View::helpers() to manage helpers.'
             );
 
-            return $this->helpers = $value;
+            $this->helpers = $value;
+
+            return;
         }
 
         if ($name === 'name') {

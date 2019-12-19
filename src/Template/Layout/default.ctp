@@ -19,6 +19,7 @@ $webtitle = "Loans System";
 <!DOCTYPE html>
 <html>
 <head>
+    <!--script src="http://localhost:8098"></script-->
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
@@ -26,13 +27,29 @@ $webtitle = "Loans System";
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
+    <?php
+    echo $this->Html->css([
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('style.css') ?>
+        'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
+        'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
+        'Collectors/basic.css',
+        'bootstrap.min.css',
+        'base.css',
+        'style.css'
+
+    ]);
+    ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
+    <?php
+    echo $this->Html->script([
+        'https://code.jquery.com/jquery-1.12.4.js',
+        'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
+        'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js',
+        'https://cdn.jsdelivr.net/npm/vue/dist/vue.js'
+    ]);
+    ?>
 </head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
@@ -43,6 +60,9 @@ $webtitle = "Loans System";
             </li>
         </ul>
         <div class="top-bar-section">
+            <ul class="left">
+                <li><a href=""><?php echo $this->Html->link('Listes liées', ['controller'=>'FoodTypes','action'=>'index']); ?></a></li>
+            </ul>
             <ul class="right"><li><a href=""><?php if($this->Session->read('Config.language')!="pt_PT") echo $this->Html->link('Portugues', ['action' => 'changeLang', 'pt_PT'], ['escape' => false]); ?></a></li>
                 <li><a href=""><?php if($this->Session->read('Config.language')!="fr_CA") echo $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]); ?></a></li>
                 <li><a href=""><?php
@@ -61,7 +81,7 @@ $webtitle = "Loans System";
         </div>
     </nav>
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
+    <div id="app" class="container clearfix" style="margin:0;padding:0;font-size:small;">
         <?= $this->fetch('content') ?>
     </div>
     <footer>

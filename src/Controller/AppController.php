@@ -37,6 +37,7 @@ class AppController extends Controller
      * e.g. `$this->loadComponent('Security');`
      *
      * @return void
+     * @throws \Exception
      */
     public function initialize()
     {
@@ -53,8 +54,8 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
 
-        $this->loadComponent('Auth', [
-            'authorize'=> 'Controller',
+        /*$this->loadComponent('Auth', [
+            'authorize' => 'Controller',
             'authenticate' => [
                 'Form' => [
                     'fields' => [
@@ -75,7 +76,7 @@ class AppController extends Controller
 
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
-        $this->Auth->allow(['display', 'view', 'index','changeLang']);
+        $this->Auth->allow(['display', 'view', 'index','changeLang']);*/
     }
     public function isAuthorized($user)
     {

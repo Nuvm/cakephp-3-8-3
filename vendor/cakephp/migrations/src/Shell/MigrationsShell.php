@@ -85,8 +85,11 @@ class MigrationsShell extends Shell
      */
     public function initialize()
     {
+        $composerConfig = ROOT . DS . 'vendor' . DS . 'robmorgan' . DS . 'phinx' . DS . 'composer.json';
+        $version = file_exists($composerConfig)? json_decode(file_get_contents($composerConfig))->version : '0';
+
         if (!defined('PHINX_VERSION')) {
-            define('PHINX_VERSION', (0 === strpos('@PHINX_VERSION@', '@PHINX_VERSION')) ? '0.4.3' : '@PHINX_VERSION@');
+            define('PHINX_VERSION', $version);
         }
         parent::initialize();
     }
@@ -107,6 +110,10 @@ class MigrationsShell extends Shell
         $input = new ArgvInput($this->argv);
         $app->setAutoExit(false);
         $exitCode = $app->run($input, $this->getOutput());
+
+        if (in_array('-h', $this->argv) || in_array('--help', $this->argv)) {
+            return $exitCode === 0;
+        }
 
         if (isset($this->argv[1]) && in_array($this->argv[1], ['migrate', 'rollback']) &&
             !$this->params['no-lock'] &&

@@ -47,11 +47,10 @@ use Cake\Http\ServerRequest;
  * valid credentials are not provided, required authentication headers will be sent
  * by this authentication provider which triggers the login dialog in the browser/client.
  *
- * @see https://book.cakephp.org/3.0/en/controllers/components/authentication.html
+ * @see https://book.cakephp.org/3/en/controllers/components/authentication.html
  */
 class BasicAuthenticate extends BaseAuthenticate
 {
-
     /**
      * Authenticate a user using HTTP auth. Will use the configured User model and attempt a
      * login using HTTP auth.
@@ -102,7 +101,7 @@ class BasicAuthenticate extends BaseAuthenticate
      * Generate the login headers
      *
      * @param \Cake\Http\ServerRequest $request Request object.
-     * @return array Headers for logging in.
+     * @return string[] Headers for logging in.
      */
     public function loginHeaders(ServerRequest $request)
     {

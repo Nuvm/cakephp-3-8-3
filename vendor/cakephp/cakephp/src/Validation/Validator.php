@@ -26,7 +26,7 @@ use IteratorAggregate;
  *
  * Implements ArrayAccess to easily modify rules in the set
  *
- * @link https://book.cakephp.org/3.0/en/core-libraries/validation.html
+ * @link https://book.cakephp.org/3/en/core-libraries/validation.html
  */
 class Validator implements ArrayAccess, IteratorAggregate, Countable
 {
@@ -324,7 +324,7 @@ class Validator implements ArrayAccess, IteratorAggregate, Countable
      *
      * @deprecated 3.4.0 Use setProvider()/getProvider() instead.
      * @param string $name The name under which the provider should be set.
-     * @param null|object|string $object Provider object or class name.
+     * @param string|object|null $object Provider object or class name.
      * @return $this|object|string|null
      */
     public function provider($name, $object = null)

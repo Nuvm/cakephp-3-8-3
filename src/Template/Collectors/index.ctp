@@ -1,49 +1,69 @@
 <?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Collector[]|\Cake\Collection\CollectionInterface $collectors
- */
+$urlToRestApi = $this->Url->build('/api/collectors', true);
+//echo $this->Html->script('var urlToRestApi = "' . $urlToRestApi . '";');
+//echo $this->Html->script('Collectors/index');
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Collector'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Loans'), ['controller' => 'Loans', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Loan'), ['controller' => 'Loans', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="collectors index large-9 medium-8 columns content">
-    <h3><?= __('Collectors') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('name') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($collectors as $collector): ?>
-            <tr>
-                <td><?= $this->Number->format($collector->id) ?></td>
-                <td><?= h($collector->name) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $collector->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $collector->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $collector->id], ['confirm' => __('Are you sure you want to delete # {0}?', $collector->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+<script><?php echo 'var urlToRestApi = "' . $urlToRestApi . '";' ?></script>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default collectors-content">
+            <div class="panel-heading">Collectors <a href="javascript:void(0);" class="glyphicon glyphicon-plus" id="addLink" onclick="javascript:$('#addForm').slideToggle()">Add</a></div>
+            <div class="panel-body none formData" id="addForm">
+                <h2 id="actionLabel">Add Collector</h2>
+                <form class="form" id="collectorAddForm" enctype='application/json'>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" id="name"/>
+                    </div>
+                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-success" onclick="collectorAction('add')">Add Collector</a>
+                    <!-- input type="submit" class="btn btn-success" id="addButton" value="Add Collector" -->
+                </form>
+            </div>
+            <div class="panel-body none formData" id="editForm">
+                <h2 id="actionLabel">Edit Collector</h2>
+                <form class="form" id="collectorEditForm" enctype='application/json'>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" id="nameEdit"/>
+                    </div>
+                    <input type="hidden" class="form-control" name="id" id="idEdit"/>
+                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-success" onclick="collectorAction('edit')">Update Collector</a>
+                    <!-- input type="submit" class="btn btn-success" id="editButton" value="Update Collector" -->
+                </form>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody id="collectorData">
+                <?php
+                $count = 0;
+                foreach ($collectors as $collector): $count++;
+                    ?>
+                    <tr>
+                        <td>#<?php echo $collector['id']; ?></td>
+                        <td><?php echo $collector['name']; ?></td>
+                        <td>
+                            <a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editCollector('<?php echo $collector['id']; ?>')"></a>
+                            <a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete data?') ? collectorAction('delete', '<?php echo $collector['id']; ?>') : false;"></a>
+                        </td>
+                    </tr>
+                <?php
+                endforeach;
+                ?>
+                <?php if($count==0): ?>
+                    <tr><td colspan="5">No collector(s) found......</td></tr>
+                <?php endif; ?>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
+<?php echo $this->Html->script('Collectors/index'); ?>
+

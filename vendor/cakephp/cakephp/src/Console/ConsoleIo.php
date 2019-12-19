@@ -29,7 +29,6 @@ use SplFileObject;
  */
 class ConsoleIo
 {
-
     /**
      * The output stream
      *
@@ -121,7 +120,7 @@ class ConsoleIo
     /**
      * Get/set the current output level.
      *
-     * @param null|int $level The current output level.
+     * @param int|null $level The current output level.
      * @return int The current output level.
      */
     public function level($level = null)
@@ -136,7 +135,7 @@ class ConsoleIo
     /**
      * Output at the verbose level.
      *
-     * @param string|array $message A string or an array of strings to output
+     * @param string|string[] $message A string or an array of strings to output
      * @param int $newlines Number of newlines to append
      * @return int|bool The number of bytes returned from writing to stdout.
      */
@@ -148,7 +147,7 @@ class ConsoleIo
     /**
      * Output at all levels.
      *
-     * @param string|array $message A string or an array of strings to output
+     * @param string|string[] $message A string or an array of strings to output
      * @param int $newlines Number of newlines to append
      * @return int|bool The number of bytes returned from writing to stdout.
      */
@@ -168,7 +167,7 @@ class ConsoleIo
      * present in most shells. Using ConsoleIo::QUIET for a message means it will always display.
      * While using ConsoleIo::VERBOSE means it will only display when verbose output is toggled.
      *
-     * @param string|array $message A string or an array of strings to output
+     * @param string|string[] $message A string or an array of strings to output
      * @param int $newlines Number of newlines to append
      * @param int $level The message's output level, see above.
      * @return int|bool The number of bytes returned from writing to stdout.
@@ -187,11 +186,11 @@ class ConsoleIo
     /**
      * Convenience method for out() that wraps message between <info /> tag
      *
-     * @param string|array|null $message A string or an array of strings to output
+     * @param string|string[]|null $message A string or an array of strings to output
      * @param int $newlines Number of newlines to append
      * @param int $level The message's output level, see above.
      * @return int|bool The number of bytes returned from writing to stdout.
-     * @see https://book.cakephp.org/3.0/en/console-and-shells.html#ConsoleIo::out
+     * @see https://book.cakephp.org/3/en/console-and-shells.html#ConsoleIo::out
      */
     public function info($message = null, $newlines = 1, $level = self::NORMAL)
     {
@@ -204,10 +203,10 @@ class ConsoleIo
     /**
      * Convenience method for err() that wraps message between <warning /> tag
      *
-     * @param string|array|null $message A string or an array of strings to output
+     * @param string|string[]|null $message A string or an array of strings to output
      * @param int $newlines Number of newlines to append
      * @return int|bool The number of bytes returned from writing to stderr.
-     * @see https://book.cakephp.org/3.0/en/console-and-shells.html#ConsoleIo::err
+     * @see https://book.cakephp.org/3/en/console-and-shells.html#ConsoleIo::err
      */
     public function warning($message = null, $newlines = 1)
     {
@@ -220,10 +219,10 @@ class ConsoleIo
     /**
      * Convenience method for err() that wraps message between <error /> tag
      *
-     * @param string|array|null $message A string or an array of strings to output
+     * @param string|string[]|null $message A string or an array of strings to output
      * @param int $newlines Number of newlines to append
      * @return int|bool The number of bytes returned from writing to stderr.
-     * @see https://book.cakephp.org/3.0/en/console-and-shells.html#ConsoleIo::err
+     * @see https://book.cakephp.org/3/en/console-and-shells.html#ConsoleIo::err
      */
     public function error($message = null, $newlines = 1)
     {
@@ -236,11 +235,11 @@ class ConsoleIo
     /**
      * Convenience method for out() that wraps message between <success /> tag
      *
-     * @param string|array|null $message A string or an array of strings to output
+     * @param string|string[]|null $message A string or an array of strings to output
      * @param int $newlines Number of newlines to append
      * @param int $level The message's output level, see above.
      * @return int|bool The number of bytes returned from writing to stdout.
-     * @see https://book.cakephp.org/3.0/en/console-and-shells.html#ConsoleIo::out
+     * @see https://book.cakephp.org/3/en/console-and-shells.html#ConsoleIo::out
      */
     public function success($message = null, $newlines = 1, $level = self::NORMAL)
     {
@@ -314,7 +313,7 @@ class ConsoleIo
      * Outputs a single or multiple error messages to stderr. If no parameters
      * are passed outputs just a newline.
      *
-     * @param string|array $message A string or an array of strings to output
+     * @param string|string[] $message A string or an array of strings to output
      * @param int $newlines Number of newlines to append
      * @return int|bool The number of bytes returned from writing to stderr.
      */
@@ -392,7 +391,7 @@ class ConsoleIo
      * @param string|null $style The style to get or create.
      * @param array|false|null $definition The array definition of the style to change or create a style
      *   or false to remove a style.
-     * @return array|null|true If you are getting styles, the style or null will be returned. If you are creating/modifying
+     * @return array|true|null If you are getting styles, the style or null will be returned. If you are creating/modifying
      *   styles true will be returned.
      * @see \Cake\Console\ConsoleOutput::styles()
      */

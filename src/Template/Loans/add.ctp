@@ -5,7 +5,10 @@
  */
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
+    <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenavToggleable" aria-controls="sidenavToggleable" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button-->
+    <ul class="side-nav" id="sidenavToggleable">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('List Loans'), ['action' => 'index']) ?></li>
         <?php if( $this->Session->read('Auth.User.permission_level')>1 ): ?>
