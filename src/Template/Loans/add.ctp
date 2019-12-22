@@ -29,7 +29,7 @@
             echo $this->Form->control('interest');
             echo $this->Form->control('amount');
             echo $this->Form->control('amount_due');
-            echo $this->Form->control('user', ['options' => $users]);
+            echo $this->Form->control('user_id', ['options' => $users]);
             echo $this->Form->control('collectors._ids', ['options' => $collectors]);
         ?>
     </fieldset>

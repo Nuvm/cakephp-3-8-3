@@ -32,7 +32,9 @@ class User extends Entity
         'permission_level' => true,
         'created' => true,
         'loans' => true,
-        'payments' => true
+        'payments' => true,
+        'uuid' => true,
+        'confirmed' => true
     ];
 
     /**
@@ -51,12 +53,8 @@ class User extends Entity
      * @param $value
      * @return bool|string
      */
-    protected function _setPassword($value)
+    protected function _setPassword($password)
     {
-        if (strlen($value)) {
-            $hasher = new DefaultPasswordHasher();
-
-            return $hasher->hash($value);
-        }
+        return (new DefaultPasswordHasher)->hash($password);
     }
 }

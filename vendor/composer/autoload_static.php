@@ -90,6 +90,10 @@ class ComposerStaticInitba9b40574c3c008b147b599a557373c0
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
+        'F' => 
+        array (
+            'Firebase\\JWT\\' => 13,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -121,6 +125,7 @@ class ComposerStaticInitba9b40574c3c008b147b599a557373c0
             'App\\Test\\' => 9,
             'App\\' => 4,
             'Ajgl\\Twig\\Extension\\' => 20,
+            'ADmad\\JwtAuth\\' => 14,
         ),
     );
 
@@ -259,6 +264,10 @@ class ComposerStaticInitba9b40574c3c008b147b599a557373c0
         array (
             0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
         ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -338,6 +347,10 @@ class ComposerStaticInitba9b40574c3c008b147b599a557373c0
         'Ajgl\\Twig\\Extension\\' => 
         array (
             0 => __DIR__ . '/..' . '/ajgl/breakpoint-twig-extension/src',
+        ),
+        'ADmad\\JwtAuth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/admad/cakephp-jwt-auth/src',
         ),
     );
 

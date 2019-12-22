@@ -13,6 +13,30 @@ use App\Controller\AppController;
 class PaymentMethodsController extends AppController
 {
     /**
+     * findCar method
+     * for use with JQuery-UI Autocomplete
+     *
+     * @return JSon query result
+     */
+    public function findPaymentMethods() {
+
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+            $results = $this->PaymentMethods->find('all', array(
+                'conditions' => array('PaymentMethods.name LIKE ' => '%' . $name . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['name'], 'value' => $result['name']);
+            }
+            echo json_encode($resultArr);
+        }
+    }
+
+    /**
      * Index method
      *
      * @return \Cake\Http\Response|null
@@ -110,12 +134,11 @@ class PaymentMethodsController extends AppController
     {
         $action = $this->request->getParam('action');
         $permslvl = $user['permission_level'];
-        if (in_array($action, ['add'])||$permslvl==2) {
+        if (in_array($action, ['add','findPaymentMethods','autocompletedemo'])||$permslvl==2) {
             return true;
         }
 
         // Toutes les autres actions nécessitent une permission
-
         if ($permslvl<1) {
             return false;
         }

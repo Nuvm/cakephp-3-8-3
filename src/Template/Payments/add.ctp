@@ -4,6 +4,14 @@
  * @var \App\Model\Entity\Payment $payment
  */
 ?>
+<?php
+$urlToPaymentMethodsAutocompleteJson = $this->Url->build([
+    "controller" => "PaymentMethods",
+    "action" => "findPaymentMethods",
+    "_ext" => "json"
+]);
+echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToPaymentMethodsAutocompleteJson . '";', ['block' => true]);
+?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -24,11 +32,12 @@
         <legend><?= __('Add Payment') ?></legend>
         <?php
             echo $this->Form->control('notes');
-            echo $this->Form->control('user_id', ['options' => $users->email]);
-            echo $this->Form->control('payment_method_id', ['options' => $paymentMethods->name]);
+            echo $this->Form->control('user_id', ['options' => $users]);
+            echo $this->Form->control('payment_method_id', ["type" => "text", 'id' => 'autocomplete', 'class' => 'ui-autocomplete-input', 'autocomplete' => 'off']);
             echo $this->Form->control('loan_id', ['options' => $loans, 'empty' => true]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
 </div>
+<?php echo $this->Html->script('PaymentMethods/autocompletedemo'); ?>

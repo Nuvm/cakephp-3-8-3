@@ -3,7 +3,14 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\File[]|\Cake\Collection\CollectionInterface $files
  */
+$urlRedirectToIndex = $this->Url->build([
+    "controller" => "Files",
+    "action" => "index"
+]);
+echo $this->Html->css('Files/dropzone.css');
+echo $this->Html->script('Files/dropzone.js');
 ?>
+<script><?php echo 'var urlRedirectToIndex = "' . $urlRedirectToIndex . '";' ?></script>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -55,6 +62,21 @@
         <?php endforeach; ?>
         </tbody>
     </table>
+    <!-- dropzone -->
+    <?php
+    echo $this->Form->create('image', [
+        'url' => ['controller' => 'Files',
+            'action' => 'add'
+        ],
+        'method' => 'post',
+        'id' => 'dropzone',
+        'class' => 'dropzone',
+        'type' => 'file',
+        'autocomplete' => 'off'
+    ]);
+    ?>
+    <?= $this->Form->end(); ?>
+    <!-- end dropzone -->
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('first')) ?>
@@ -66,3 +88,4 @@
         <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
     </div>
 </div>
+<?php echo $this->Html->script('Files/redirectToIndex.js'); ?>

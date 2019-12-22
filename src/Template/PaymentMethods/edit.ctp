@@ -25,7 +25,7 @@
         <?php
             echo $this->Form->control('name');
             echo $this->Form->control('description');
-            echo $this->Form->control('file_id',['options'=>$files->name]);
+            echo $this->Form->control('file_id',['options'=>$files]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

@@ -12,6 +12,7 @@ use App\Controller\AppController;
  */
 class PaymentsController extends AppController
 {
+
     /**
      * Index method
      *
@@ -52,7 +53,9 @@ class PaymentsController extends AppController
     {
         $payment = $this->Payments->newEntity();
         if ($this->request->is('post')) {
+            $query = $this->Payments->PaymentMethods->find('all', ['conditions'=> ['PaymentMethods.name ='=> $this->request->getData('payment_method_id')]]);
             $payment = $this->Payments->patchEntity($payment, $this->request->getData());
+            $payment->set('payment_method_id',$query->first()->get('id'));
             if ($this->Payments->save($payment)) {
                 $this->Flash->success(__('The payment has been saved.'));
 

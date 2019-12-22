@@ -30,8 +30,8 @@
         <legend><?= __('Edit Payment') ?></legend>
         <?php
             echo $this->Form->control('notes');
-            echo $this->Form->control('user_id', ['options' => $users->email]);
-            echo $this->Form->control('payment_method_id', ['options' => $paymentMethods->name]);
+            echo $this->Form->control('user_id', ['options' => $users]);
+            echo $this->Form->control('payment_method_id', ['options' => $paymentMethods]);
             echo $this->Form->control('loan_id', ['options' => $loans, 'empty' => true]);
         ?>
     </fieldset>

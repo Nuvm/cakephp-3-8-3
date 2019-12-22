@@ -19,7 +19,6 @@ $webtitle = "Loans System";
 <!DOCTYPE html>
 <html>
 <head>
-    <!--script src="http://localhost:8098"></script-->
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>

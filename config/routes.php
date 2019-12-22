@@ -22,6 +22,8 @@ use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 
+Router::extensions(['json', 'xml']);
+
 /**
  * The default class to use for all routes
  *
@@ -52,16 +54,16 @@ Router::prefix('Admin', function (RouteBuilder $routes) {
 
 Router::scope('/', function (RouteBuilder $routes) {
     // Register scoped middleware for in scopes.
-    /*$routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([
+    $routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([
         'httpOnly' => true
-    ]));*/
+    ]));
 
 
     /**
      * Apply a middleware to the current route scope.
      * Requires middleware to be registered via `Application::routes()` with `registerMiddleware()`
      */
-    /*$routes->applyMiddleware('csrf');*/
+    //$routes->applyMiddleware('csrf');
 
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
@@ -109,7 +111,9 @@ Router::scope('/', function (RouteBuilder $routes) {
  * ```
  */
 Router::prefix('Api', function (RouteBuilder $routes) {
-    //Router::extensions(['json', 'xml']);
     $routes->setExtensions(['json', 'xml']);
     $routes->resources('Collectors');
+    $routes->resources('Users');
+    Router::connect('/api/users/register', ['controller' => 'Users', 'action' => 'add', 'prefix' => 'api']);
+    $routes->fallbacks('InflectedRoute');
 });

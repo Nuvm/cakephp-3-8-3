@@ -5,3 +5,181 @@ Stack Trace:
 #2 {main}
 
 
+2019-11-14 15:29:14 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Sqlite cannot be used due to a missing PHP extension or unmet dependency in C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Database\Connection.php on line 179
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Sqlite',
+)
+Stack Trace:
+#0 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Database\Connection.php(120): Cake\Database\Connection->setDriver(Object(Cake\Database\Driver\Sqlite), Array)
+#1 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php(89): Cake\Database\Connection->__construct(Array)
+#2 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(97): Cake\Datasource\ConnectionRegistry->_create('Cake\\Database\\C...', 'default', Array)
+#3 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php(205): Cake\Core\ObjectRegistry->load('Cake\\Database\\C...', Array)
+#4 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(68): Cake\Datasource\ConnectionManager::get('default')
+#5 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(74): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(915): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#14 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#16 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#17 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-11-14 15:32:02 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Sqlite cannot be used due to a missing PHP extension or unmet dependency in C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Database\Connection.php on line 179
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Sqlite',
+)
+Stack Trace:
+#0 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Database\Connection.php(120): Cake\Database\Connection->setDriver(Object(Cake\Database\Driver\Sqlite), Array)
+#1 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php(89): Cake\Database\Connection->__construct(Array)
+#2 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(97): Cake\Datasource\ConnectionRegistry->_create('Cake\\Database\\C...', 'default', Array)
+#3 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php(205): Cake\Core\ObjectRegistry->load('Cake\\Database\\C...', Array)
+#4 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(68): Cake\Datasource\ConnectionManager::get('default')
+#5 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(74): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(915): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#14 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#16 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#17 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-11-14 15:37:13 Error: [InvalidArgumentException] The seed class "files" does not exist in C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'files')
+#1 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(915): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-14 15:38:11 Error: [InvalidArgumentException] The seed class "filesSeed" does not exist in C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'filesSeed')
+#1 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(915): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-14 15:38:31 Error: [InvalidArgumentException] The seed class "Payment_MethodsSeed" does not exist in C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'Payment_Methods...')
+#1 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(915): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-14 15:38:36 Error: [InvalidArgumentException] The seed class "Payment_methodsSeed" does not exist in C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'Payment_methods...')
+#1 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(915): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-14 15:38:42 Error: [InvalidArgumentException] The seed class "payment_methodsSeed" does not exist in C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'payment_methods...')
+#1 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(915): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-14 15:38:48 Error: [InvalidArgumentException] The seed class "payment_methodSeed" does not exist in C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'payment_methodS...')
+#1 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(915): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-14 15:39:22 Error: [InvalidArgumentException] The seed class "PaymentMethodSeed" does not exist in C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'PaymentMethodSe...')
+#1 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(915): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniserverZ\UniServerZ\www\gr02\cakephp-3-8-3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+

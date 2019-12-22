@@ -3,6 +3,7 @@
 use Cake\Cache\Engine\FileEngine;
 use Cake\Database\Connection;
 use Cake\Database\Driver\Mysql;
+use Cake\Database\Driver\Sqlite;
 use Cake\Error\ExceptionRenderer;
 use Cake\Log\Engine\FileLog;
 use Cake\Mailer\Transport\MailTransport;
@@ -218,6 +219,13 @@ return [
             'tls' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
+        'davmail' => [
+            'host' => 'localhost',
+            'port' => 1025,
+            'username' => '1639136@cmontmorency.qc.ca',
+            'password' => '39c92A6',
+            'className' => 'Smtp'
+        ]
     ],
 
     /**
@@ -231,8 +239,8 @@ return [
      */
     'Email' => [
         'default' => [
-            'transport' => 'default',
-            'from' => 'you@localhost',
+            'transport' => 'davmail',
+            'from' => '1639136@cmontmorency.qc.ca',
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
         ],
@@ -254,7 +262,7 @@ return [
     'Datasources' => [
         'default' => [
             'className' => Connection::class,
-            'driver' => Mysql::class,
+            'driver' => Sqlite::class,
             'persistent' => false,
             'host' => 'localhost',
             /*
@@ -265,7 +273,7 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => 'root',
-            'database' => 'cake_loans',
+            'database' => ROOT . DS . 'sqlite' . DS . 'default.sqlite',
             /*
              * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
              */
@@ -302,7 +310,7 @@ return [
          */
         'test' => [
             'className' => Connection::class,
-            'driver' => Mysql::class,
+            'driver' => Sqlite::class,
             'persistent' => false,
             'host' => 'localhost',
             //'port' => 'non_standard_port_number',

@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Mailer\Email;
 
 /**
  * Users Controller
@@ -150,5 +151,24 @@ class UsersController extends AppController
             return true;
         }
         return false;
+    }
+
+    public function sendEmail($id){
+        $user = $this->Users->get($id);
+        $confirmation_link = "http://" . $_SERVER['HTTP_HOST'] . $this->request->webroot . "users/confirm/" . $user['uuid'];
+
+        $email = new Email('default');
+        $email->setTo($user['email'])->setSubject('Gestion des emprunts - Confirmation de votre adresse courriel')->send($confirmation_link);
+    }
+
+    public function confirm($uuid){
+        $user = $this->Users->find('all')->where('UUID'==$uuid)->first();
+        $user->set('confirmed',true);
+        if($this->Users->save($user)){
+            $this->Flash->success(__('The user has been confirmed.'));
+            return $this->redirect(['action' => 'index']);
+        } else {
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
     }
 }

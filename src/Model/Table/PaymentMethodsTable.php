@@ -31,7 +31,7 @@ class PaymentMethodsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-
+        $this->addBehavior('Translate', ['fields' => ['name','description']]);
         $this->setTable('payment_methods');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
